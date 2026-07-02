@@ -3151,6 +3151,13 @@ form textarea:required:valid {
   overflow: hidden;
   cursor: pointer;
 }
+.my-gallery__item img {
+  width: 100%;
+  height: auto;
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
 .my-gallery__item h5 {
   color: var(--t-per-bright-light);
 }
@@ -3162,8 +3169,10 @@ form textarea:required:valid {
     height: 50vh;
   }
   .my-gallery__item img {
-    width: auto;
-    height: 50vh;
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
 }
 
@@ -3199,6 +3208,9 @@ form textarea:required:valid {
 
 .my-gallery__image {
   opacity: 1;
+  width: 100%;
+  height: auto;
+  display: block;
 }
 @media only screen and (min-width: 1200px) {
   .my-gallery__image {
